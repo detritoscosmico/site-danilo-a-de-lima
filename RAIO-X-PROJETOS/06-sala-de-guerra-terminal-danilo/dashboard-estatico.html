@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sala de Guerra — Dashboard Estático</title>
+  <style>
+    body{margin:0;background:#050505;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}
+    header{padding:24px;background:#111;border-bottom:1px solid #333}
+    main{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .card{background:#101010;border:1px solid #2b2b2b;border-radius:16px;padding:20px}
+    .danger{color:#ff6969}.ok{color:#75ff9c}.warn{color:#ffd166}
+    table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #333;padding:10px;text-align:left}
+    @media(max-width:850px){main{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sala de Guerra / Terminal Danilo Alves™</h1>
+    <p>Dashboard estático para estudo, disciplina e gestão de risco.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Status Operacional</h2>
+      <p class="warn">Modo: Simulação</p>
+      <p class="ok">Risco: Controlado</p>
+      <p class="danger">Aviso: Não operar sem plano.</p>
+    </section>
+    <section class="card">
+      <h2>Checklist antes de operar</h2>
+      <ul>
+        <li>Contexto analisado?</li>
+        <li>Risco definido?</li>
+        <li>Entrada tem confirmação?</li>
+        <li>Você está emocionalmente calmo?</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Ativos em observação</h2>
+      <table>
+        <tr><th>Ativo</th><th>Status</th><th>Risco</th></tr>
+        <tr><td>EUR/USD</td><td>Aguardar confirmação</td><td>Médio</td></tr>
+        <tr><td>Ouro</td><td>Volátil</td><td>Alto</td></tr>
+        <tr><td>Petróleo</td><td>Observar notícia</td><td>Alto</td></tr>
+      </table>
+    </section>
+    <section class="card">
+      <h2>Diário manual</h2>
+      <p>Registrar toda análise antes de qualquer decisão.</p>
+      <textarea style="width:100%;height:120px;background:#050505;color:white;border:1px solid #333;border-radius:10px"></textarea>
+    </section>
+  </main>
+</body>
+</html>
