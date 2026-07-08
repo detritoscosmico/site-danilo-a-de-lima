@@ -15,17 +15,17 @@
       <div>
         <p class="eyebrow">ELEGANCE COSMÉTICOS</p>
         <h1>Produtos selecionados para vender mais rápido e com melhor margem.</h1>
-        <p class="lead">Catálogo com perfumes, combos, maquiagem, cabelo e cuidados pessoais. Monte seu pedido, favorite produtos e finalize pelo WhatsApp.</p>
+        <p class="lead">Catálogo com perfumes, combos, maquiagem, cabelo e cuidados pessoais. Monte seu pedido, favorite produtos e finalize direto no WhatsApp da Elegance.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#produtos">Ver produtos</a>
           <a class="btn secondary" target="_blank" rel="noopener" href="https://minhaloja.boticario.com.br/loja-daniloalvestomedesouza-26296283/categoria?category=lancamento&page=2">Abrir catálogo oficial</a>
         </div>
       </div>
       <aside class="summary-card">
-        <span>Top lucro</span>
-        <strong>Comb Club 6 Prestige</strong>
-        <p>Lucro informado: R$ 32,98</p>
-        <small>Validar estoque e preço antes de anunciar.</small>
+        <span>Atendimento</span>
+        <strong>WhatsApp Elegance</strong>
+        <p>(31) 99517-0249</p>
+        <small>Pedidos enviados direto para confirmação de estoque e preço.</small>
       </aside>
     </div>
   </header>
@@ -43,7 +43,7 @@
     <section class="section">
       <div class="container trust-grid">
         <article class="trust-card"><strong>Compra pelo catálogo oficial</strong><span>O cliente confere produto, valor e disponibilidade.</span></article>
-        <article class="trust-card"><strong>Atendimento direto</strong><span>Pedido montado e enviado por WhatsApp.</span></article>
+        <article class="trust-card"><strong>WhatsApp direto</strong><span>Pedido enviado para (31) 99517-0249.</span></article>
         <article class="trust-card"><strong>Produtos selecionados</strong><span>Vitrine prioriza margem, procura e potencial de presente.</span></article>
         <article class="trust-card"><strong>Preço validado antes</strong><span>Evita promessa errada quando o ciclo muda.</span></article>
       </div>
@@ -115,9 +115,10 @@
     <button class="suzy-btn" id="suzyToggle">🎧 Conversar com Suzy</button>
   </div>
 
-  <footer><div class="container footer"><p>Elegance Cosméticos — catálogo organizado por Danilo A. de Lima.</p><p>Preços sujeitos a alteração no catálogo oficial.</p></div></footer>
+  <footer><div class="container footer"><p>Elegance Cosméticos — catálogo organizado por Danilo A. de Lima.</p><p>WhatsApp: (31) 99517-0249</p></div></footer>
 
   <script>
+    const numeroWhatsApp = '5531995170249';
     const catalogo = 'https://minhaloja.boticario.com.br/loja-daniloalvestomedesouza-26296283/categoria?category=lancamento&page=2';
     const vis = 'assets/visuais/';
     const produtos = [
@@ -143,7 +144,8 @@
     let carrinho = JSON.parse(localStorage.getItem('eleganceCarrinho') || '[]');
     let favoritos = JSON.parse(localStorage.getItem('eleganceFavoritos') || '[]');
     function dinheiro(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
-    function zap(produto){return 'https://wa.me/?text=' + encodeURIComponent('Olá, tenho interesse no produto ' + produto.nome + ' por ' + produto.preco + '. Ainda está disponível?');}
+    function linkWhatsApp(texto){return 'https://wa.me/' + numeroWhatsApp + '?text=' + encodeURIComponent(texto);}
+    function zap(produto){return linkWhatsApp('Olá, tenho interesse no produto ' + produto.nome + ' por ' + produto.preco + '. Ainda está disponível?');}
     function produtoPorId(id){return produtos.find(p=>p.id===id);}
     function salvar(){localStorage.setItem('eleganceCarrinho', JSON.stringify(carrinho));localStorage.setItem('eleganceFavoritos', JSON.stringify(favoritos));}
     function render(){
@@ -165,7 +167,7 @@
       box.innerHTML = itens.length ? itens.map((p,i)=>`<div class="cart-item"><span>${p.nome}<br><strong>${p.preco}</strong></span><button onclick="removerCarrinho(${i})">x</button></div>`).join('') : '<p class="mini">Nenhum produto no pedido.</p>';
       document.getElementById('cartTotal').textContent = 'Total aproximado: ' + dinheiro(total);
       const texto = itens.length ? 'Olá, quero estes produtos da Elegance Cosméticos:\n\n' + itens.map((p,i)=>`${i+1}. ${p.nome} — ${p.preco}`).join('\n') + '\n\nTotal aproximado: ' + dinheiro(total) + '\nPode confirmar estoque e valor atual?' : 'Olá, quero ver produtos da Elegance Cosméticos.';
-      document.getElementById('checkout').href = 'https://wa.me/?text=' + encodeURIComponent(texto);
+      document.getElementById('checkout').href = linkWhatsApp(texto);
     }
     window.adicionarCarrinho = adicionarCarrinho; window.removerCarrinho = removerCarrinho; window.alternarFavorito = alternarFavorito;
     document.getElementById('cartToggle').addEventListener('click',()=>document.getElementById('cartPanel').classList.toggle('open'));
@@ -173,7 +175,7 @@
     document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>aplicarFiltro(btn.dataset.filter)));
     document.querySelectorAll('.gift-card').forEach(btn=>btn.addEventListener('click',()=>aplicarFiltro(btn.dataset.quick)));
     busca.addEventListener('input', render);
-    document.getElementById('whatsappGeral').href = 'https://wa.me/?text=' + encodeURIComponent('Oi, quero divulgar a Elegance Cosméticos. Me envie as melhores opções de perfumes, presentes e produtos O Boticário.');
+    document.getElementById('whatsappGeral').href = linkWhatsApp('Oi, quero ver produtos da Elegance Cosméticos. Me envie as melhores opções de perfumes, presentes e produtos O Boticário.');
     render();
 
     const suzyPanel = document.getElementById('suzyPanel');
