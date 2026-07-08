@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-label="Visual perfume feminino">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0f8"/><stop offset="1" stop-color="#b83280"/></linearGradient></defs>
+  <rect width="900" height="650" rx="42" fill="url(#bg)"/>
+  <circle cx="210" cy="150" r="170" fill="#ffffff" opacity="0.28"/>
+  <rect x="355" y="150" width="190" height="350" rx="88" fill="#ffffff" opacity="0.82" stroke="#7a1f56" stroke-width="8"/>
+  <rect x="392" y="102" width="116" height="66" rx="18" fill="#7a1f56"/>
+  <rect x="420" y="70" width="60" height="42" rx="10" fill="#fff" stroke="#7a1f56" stroke-width="6"/>
+  <text x="450" y="545" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#4a0f35">PERFUME FEMININO</text>
+  <text x="450" y="590" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#4a0f35">Elegance Cosméticos</text>
+</svg>
