@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elegance Cosméticos | Loja O Boticário</title>
   <meta name="description" content="Catálogo Elegance Cosméticos com produtos O Boticário selecionados por lucro, categoria e potencial de venda." />
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff7fb;color:#24111d;line-height:1.5}.container{width:min(1180px,92%);margin:0 auto}.hero{padding:58px 0;background:linear-gradient(135deg,#111,#7a1f56);color:white}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.eyebrow{color:#ffd7ef;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:13px}h1{font-size:clamp(38px,6vw,68px);line-height:1;margin:10px 0 18px}h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:0 0 14px}.lead{font-size:19px;color:#ffeaf6}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn,.product-card a{display:inline-block;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;text-align:center}.primary,.whats{background:#1f7a35;color:white}.secondary{border:1px solid white;color:white}.catalog{background:#7a1f56;color:white}.summary-card{background:rgba(255,255,255,.12);border-radius:24px;padding:24px}.summary-card strong{display:block;font-size:32px;line-height:1.05;margin:10px 0}.section{padding:46px 0}.dark{background:#20111b;color:white}.stats-grid,.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.stats-grid article,.product-card,.strategy-card{background:white;border-radius:20px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.08)}.stats-grid strong{display:block;font-size:28px;color:#7a1f56}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end}.search-box{width:min(430px,100%)}input{width:100%;padding:14px;border-radius:999px;border:1px solid #ddd;font-size:16px}.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.filter{border:1px solid #7a1f56;background:white;color:#7a1f56;border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer}.filter.active,.filter:hover{background:#7a1f56;color:white}.product-card{display:flex;flex-direction:column;gap:8px;position:relative}.product-card.top{border:2px solid #d4af37}.badge{background:#7a1f56;color:white;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:900;width:max-content}.product-img{width:100%;border-radius:14px}.category{color:#7a1f56;font-size:12px;font-weight:900;text-transform:uppercase}.price{font-size:25px;font-weight:900;color:#7a1f56;margin:0}.profit{color:#1f7a35;font-weight:900;margin:0}.meta{color:#68495d;font-size:13px;margin:0}.actions{display:grid;gap:9px;margin-top:auto}.strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.strategy-card{background:rgba(255,255,255,.08);box-shadow:none}.empty{text-align:center;font-weight:900}.footer{display:flex;justify-content:space-between;gap:18px;padding:24px 0;color:#68495d}@media(max-width:950px){.hero-grid,.strategy-grid,.section-head{display:block}.stats-grid,.product-grid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.stats-grid,.product-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -41,13 +43,8 @@
     <section id="produtos" class="section">
       <div class="container">
         <div class="section-head">
-          <div>
-            <p class="eyebrow">VITRINE INTELIGENTE</p>
-            <h2>Escolha por categoria ou pesquise pelo nome</h2>
-          </div>
-          <div class="search-box">
-            <input id="busca" type="search" placeholder="Buscar: Malbec, Egeo, Coffee..." />
-          </div>
+          <div><p class="eyebrow">VITRINE INTELIGENTE</p><h2>Escolha por categoria ou pesquise pelo nome</h2></div>
+          <div class="search-box"><input id="busca" type="search" placeholder="Buscar: Malbec, Egeo, Coffee..." /></div>
         </div>
 
         <div class="filters" id="filters">
@@ -68,31 +65,48 @@
 
     <section class="section dark">
       <div class="container strategy-grid">
-        <article class="strategy-card">
-          <h2>Ordem para anunciar hoje</h2>
-          <ol>
-            <li>Malbec — produto chamariz.</li>
-            <li>Comb Club 6 Prestige — maior lucro.</li>
-            <li>Imensi — alto lucro feminino.</li>
-            <li>Coffee Woman Seduction — apelo emocional.</li>
-          </ol>
-        </article>
-        <article class="strategy-card">
-          <h2>Mensagem rápida</h2>
-          <p>“Oi, tenho produtos O Boticário com compra pelo catálogo e opções de pronta entrega. Me fala se você quer perfume masculino, feminino ou presente que eu te mando as melhores opções.”</p>
-          <a class="btn primary" id="whatsappGeral" href="#">Chamar no WhatsApp</a>
-        </article>
+        <article class="strategy-card"><h2>Ordem para anunciar hoje</h2><ol><li>Malbec — produto chamariz.</li><li>Comb Club 6 Prestige — maior lucro.</li><li>Imensi — alto lucro feminino.</li><li>Coffee Woman Seduction — apelo emocional.</li></ol></article>
+        <article class="strategy-card"><h2>Mensagem rápida</h2><p>“Oi, tenho produtos O Boticário com compra pelo catálogo e opções de pronta entrega. Me fala se você quer perfume masculino, feminino ou presente que eu te mando as melhores opções.”</p><a class="btn primary" id="whatsappGeral" href="#">Chamar no WhatsApp</a></article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer">
-      <p>Elegance Cosméticos — catálogo organizado por Danilo A. de Lima.</p>
-      <p>Preços sujeitos a alteração no catálogo oficial.</p>
-    </div>
-  </footer>
+  <footer><div class="container footer"><p>Elegance Cosméticos — catálogo organizado por Danilo A. de Lima.</p><p>Preços sujeitos a alteração no catálogo oficial.</p></div></footer>
 
-  <script src="script.js"></script>
+  <script>
+    const catalogo = 'https://minhaloja.boticario.com.br/loja-daniloalvestomedesouza-26296283/categoria?category=lancamento&page=2';
+    const vis = 'assets/visuais/';
+    const produtos = [
+      {nome:'Comb Club 6 Prestige Pais/26',preco:'R$ 164,90',lucro:'R$ 32,98',codigo:'97395',cat:'Combo presente masculino',tags:['top','combo','masculino'],img:'combo-presente.svg'},
+      {nome:'Imensi Desodorante Colônia 100ml',preco:'R$ 159,90',lucro:'R$ 31,98',codigo:'49509',cat:'Perfumaria feminina',tags:['top','feminino'],img:'perfume-feminino.svg'},
+      {nome:'Malbec Desodorante Colônia 100ml',preco:'R$ 179,91',lucro:'R$ 26,99',codigo:'84387',cat:'Perfumaria masculina',tags:['top','masculino'],img:'perfume-masculino.svg'},
+      {nome:'Comb Volpe Pais/26',preco:'R$ 129,90',lucro:'R$ 25,98',codigo:'96806',cat:'Combo presente masculino',tags:['top','combo','masculino'],img:'combo-presente.svg'},
+      {nome:'Egeo Blue Desodorante Colônia 90ml',preco:'R$ 164,90',lucro:'R$ 24,74',codigo:'82686',cat:'Perfumaria masculina',tags:['top','masculino'],img:'perfume-masculino.svg'},
+      {nome:'Egeo Feminino Desodorante Colônia',preco:'R$ 164,90',lucro:'R$ 24,74',codigo:'82688',cat:'Perfumaria feminina',tags:['top','feminino'],img:'perfume-feminino.svg'},
+      {nome:'Coffee Woman Seduction 100ml',preco:'R$ 160,91',lucro:'R$ 24,14',codigo:'20603',cat:'Perfumaria feminina',tags:['top','feminino'],img:'perfume-feminino.svg'},
+      {nome:'Magnific Rouge Camélia 75ml',preco:'R$ 119,90',lucro:'R$ 23,98',codigo:'52943',cat:'Perfumaria feminina',tags:['top','feminino'],img:'perfume-feminino.svg'},
+      {nome:'Egeo Original Desodorante Colônia 90ml',preco:'R$ 129,91',lucro:'R$ 19,49',codigo:'-',cat:'Perfumaria',tags:['masculino'],img:'perfume-masculino.svg'},
+      {nome:'Shimmer Splash Sophie Toy Story 5 110ml',preco:'R$ 79,90',lucro:'R$ 11,98',codigo:'86061',cat:'Infantil',tags:['entrada'],img:'infantil.svg'},
+      {nome:'Club 6 Prestige Loção Hidratante 200ml',preco:'R$ 44,90',lucro:'R$ 8,98',codigo:'-',cat:'Corpo masculino',tags:['masculino','entrada'],img:'hidratante.svg'},
+      {nome:'Batom e Blush Vermelho Goji Berry 3,5g',preco:'R$ 55,90',lucro:'R$ 8,38',codigo:'89203',cat:'Maquiagem',tags:['maquiagem','entrada'],img:'maquiagem.svg'},
+      {nome:'Condicionador Match Escudo de Hidratação 280ml',preco:'R$ 34,90',lucro:'R$ 5,24',codigo:'89694',cat:'Cabelos',tags:['cabelos','entrada'],img:'cabelos.svg'},
+      {nome:'Delineador Líquido Pretolino 2,5ml',preco:'R$ 30,90',lucro:'R$ 4,64',codigo:'77917',cat:'Maquiagem',tags:['maquiagem','entrada'],img:'maquiagem.svg'}
+    ];
+    const grid = document.getElementById('productGrid');
+    const busca = document.getElementById('busca');
+    const empty = document.getElementById('emptyState');
+    let filtro = 'todos';
+    function zap(produto){return 'https://wa.me/?text=' + encodeURIComponent('Olá, tenho interesse no produto ' + produto.nome + ' por ' + produto.preco + '. Ainda está disponível?');}
+    function render(){
+      const termo = busca.value.toLowerCase().trim();
+      const lista = produtos.filter(p => (filtro==='todos' || p.tags.includes(filtro)) && p.nome.toLowerCase().includes(termo));
+      grid.innerHTML = lista.map((p,i) => `<article class="product-card ${p.tags.includes('top')?'top':''}">${p.tags.includes('top')?'<span class="badge">Mais lucrativo</span>':''}<img class="product-img" src="${vis+p.img}" alt="${p.nome}"><p class="category">${p.cat}</p><h3>${p.nome}</h3><p class="price">${p.preco}</p><p class="profit">Lucro: ${p.lucro}</p><p class="meta">Código: ${p.codigo}</p><div class="actions"><a class="catalog" target="_blank" rel="noopener" href="${catalogo}">Comprar pelo catálogo</a><a class="whats" target="_blank" rel="noopener" href="${zap(p)}">Mensagem pronta</a></div></article>`).join('');
+      empty.hidden = lista.length !== 0;
+    }
+    document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filtro=btn.dataset.filter;render();}));
+    busca.addEventListener('input', render);
+    document.getElementById('whatsappGeral').href = 'https://wa.me/?text=' + encodeURIComponent('Oi, quero divulgar a Elegance Cosméticos. Me envie as melhores opções de perfumes, presentes e produtos O Boticário.');
+    render();
+  </script>
 </body>
 </html>
