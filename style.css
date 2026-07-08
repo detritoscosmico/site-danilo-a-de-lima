@@ -247,6 +247,59 @@ h2 {
   margin-bottom: 18px;
 }
 
+.acervo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.acervo-card {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--white);
+  background: #101010;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.acervo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+  background: #141414;
+}
+
+.acervo-card span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.acervo-card strong {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.acervo-card small {
+  color: var(--gray);
+}
+
+.acervo-card.priority {
+  background: linear-gradient(145deg, rgba(212,175,55,.16), #101010);
+}
+
+.acervo-card.published {
+  border-color: rgba(106, 255, 170, .45);
+}
+
 .offer {
   text-align: center;
   max-width: 760px;
@@ -315,7 +368,8 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .library-grid {
+  .library-grid,
+  .acervo-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -344,7 +398,8 @@ footer {
 
   .cards,
   .cards.three,
-  .library-grid {
+  .library-grid,
+  .acervo-grid {
     grid-template-columns: 1fr;
   }
 
