@@ -9,6 +9,8 @@
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -104,9 +106,10 @@ h2 {
 
 .hero h2 { color: var(--gold); }
 
-.hero-text {
+.hero-text,
+.section-lead {
   color: var(--gray);
-  max-width: 620px;
+  max-width: 720px;
   font-size: 18px;
 }
 
@@ -125,6 +128,12 @@ h2 {
   font-weight: 800;
   border: 1px solid var(--gold);
   cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(212,175,55,.18);
 }
 
 .primary {
@@ -142,35 +151,17 @@ h2 {
   justify-content: center;
 }
 
-.book-cover {
-  width: 290px;
-  height: 430px;
-  background:
-    linear-gradient(145deg, rgba(212,175,55,.12), transparent 35%),
-    #080808;
-  border: 2px solid var(--gold);
-  box-shadow: 0 30px 80px rgba(212,175,55,.22);
-  padding: 38px 26px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero-book {
+  perspective: 1200px;
+}
+
+.cover-img {
+  width: min(330px, 100%);
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 30px 85px rgba(212,175,55,.28);
   transform: rotate(-3deg);
-}
-
-.book-cover span,
-.book-cover strong {
   display: block;
-  color: var(--gold);
-  font-size: 46px;
-  line-height: .95;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.book-cover small {
-  margin-top: 46px;
-  color: var(--white);
-  letter-spacing: 2px;
 }
 
 .section {
@@ -205,6 +196,11 @@ h2 {
   margin-top: 34px;
 }
 
+.library-grid {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+}
+
 .cards.three {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -226,8 +222,29 @@ h2 {
   font-size: 24px;
 }
 
-.card p, .card li {
+.card p,
+.card li {
   color: var(--gray);
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item .btn {
+  margin-top: auto;
+  text-align: center;
+}
+
+.book-thumb {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(212,175,55,.34);
+  box-shadow: 0 18px 45px rgba(0,0,0,.35);
+  margin-bottom: 18px;
 }
 
 .offer {
@@ -297,6 +314,12 @@ footer {
   gap: 20px;
 }
 
+@media (max-width: 1100px) {
+  .library-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 860px) {
   .menu-btn { display: block; }
 
@@ -320,7 +343,8 @@ footer {
   }
 
   .cards,
-  .cards.three {
+  .cards.three,
+  .library-grid {
     grid-template-columns: 1fr;
   }
 
@@ -328,8 +352,8 @@ footer {
     flex-direction: column;
   }
 
-  .book-cover {
-    width: 240px;
-    height: 360px;
+  .cover-img {
+    width: min(260px, 100%);
+    transform: rotate(0);
   }
 }
