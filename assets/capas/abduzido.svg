@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1350" viewBox="0 0 900 1350" role="img" aria-label="Capa Abduzido">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#01020a"/><stop offset="0.55" stop-color="#07111f"/><stop offset="1" stop-color="#050505"/></linearGradient><radialGradient id="beam" cx="50%" cy="10%" r="70%"><stop offset="0" stop-color="#89f7ff" stop-opacity="0.55"/><stop offset="1" stop-color="#89f7ff" stop-opacity="0"/></radialGradient></defs>
+  <rect width="900" height="1350" fill="url(#bg)"/>
+  <rect width="900" height="1350" fill="url(#beam)"/>
+  <rect x="55" y="55" width="790" height="1240" fill="none" stroke="#89f7ff" stroke-width="8" opacity="0.75"/>
+  <ellipse cx="450" cy="255" rx="190" ry="48" fill="none" stroke="#89f7ff" stroke-width="10"/>
+  <path d="M300 305 L165 860 L735 860 L600 305" fill="#89f7ff" opacity="0.10"/>
+  <text x="450" y="675" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial" font-size="96" font-weight="900">ABDUZIDO</text>
+  <text x="450" y="765" text-anchor="middle" fill="#89f7ff" font-family="Arial" font-size="34" font-weight="700" letter-spacing="5">UMA JORNADA AO DESCONHECIDO</text>
+  <text x="450" y="1180" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="40" font-weight="700">DANILO A. DE LIMA</text>
+</svg>
