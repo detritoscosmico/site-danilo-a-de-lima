@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegance Cosméticos | Loja O Boticário</title>
+  <meta name="description" content="Catálogo Elegance Cosméticos com produtos O Boticário selecionados por lucro, categoria e potencial de venda." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">ELEGANCE COSMÉTICOS</p>
+        <h1>Produtos selecionados para vender mais rápido e com melhor margem.</h1>
+        <p class="lead">Catálogo com perfumes, combos, maquiagem, cabelo e cuidados pessoais. Clique no produto, veja o lucro e envie mensagem pelo WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#produtos">Ver produtos</a>
+          <a class="btn secondary" target="_blank" rel="noopener" href="https://minhaloja.boticario.com.br/loja-daniloalvestomedesouza-26296283/categoria?category=lancamento&page=2">Abrir catálogo oficial</a>
+        </div>
+      </div>
+      <aside class="summary-card">
+        <span>Top lucro</span>
+        <strong>Comb Club 6 Prestige</strong>
+        <p>Lucro informado: R$ 32,98</p>
+        <small>Validar estoque e preço antes de anunciar.</small>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section stats">
+      <div class="container stats-grid">
+        <article><strong>17</strong><span>produtos organizados</span></article>
+        <article><strong>8</strong><span>prioritários por lucro</span></article>
+        <article><strong>R$ 32,98</strong><span>maior lucro informado</span></article>
+        <article><strong>WhatsApp</strong><span>mensagem pronta</span></article>
+      </div>
+    </section>
+
+    <section id="produtos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">VITRINE INTELIGENTE</p>
+            <h2>Escolha por categoria ou pesquise pelo nome</h2>
+          </div>
+          <div class="search-box">
+            <input id="busca" type="search" placeholder="Buscar: Malbec, Egeo, Coffee..." />
+          </div>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="top">Mais lucrativos</button>
+          <button class="filter" data-filter="masculino">Masculino</button>
+          <button class="filter" data-filter="feminino">Feminino</button>
+          <button class="filter" data-filter="combo">Presentes</button>
+          <button class="filter" data-filter="maquiagem">Maquiagem</button>
+          <button class="filter" data-filter="cabelos">Cabelos</button>
+          <button class="filter" data-filter="entrada">Até R$ 80</button>
+        </div>
+
+        <div id="productGrid" class="product-grid"></div>
+        <p id="emptyState" class="empty" hidden>Nenhum produto encontrado com esse filtro.</p>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container strategy-grid">
+        <article class="strategy-card">
+          <h2>Ordem para anunciar hoje</h2>
+          <ol>
+            <li>Malbec — produto chamariz.</li>
+            <li>Comb Club 6 Prestige — maior lucro.</li>
+            <li>Imensi — alto lucro feminino.</li>
+            <li>Coffee Woman Seduction — apelo emocional.</li>
+          </ol>
+        </article>
+        <article class="strategy-card">
+          <h2>Mensagem rápida</h2>
+          <p>“Oi, tenho produtos O Boticário com compra pelo catálogo e opções de pronta entrega. Me fala se você quer perfume masculino, feminino ou presente que eu te mando as melhores opções.”</p>
+          <a class="btn primary" id="whatsappGeral" href="#">Chamar no WhatsApp</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>Elegance Cosméticos — catálogo organizado por Danilo A. de Lima.</p>
+      <p>Preços sujeitos a alteração no catálogo oficial.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
