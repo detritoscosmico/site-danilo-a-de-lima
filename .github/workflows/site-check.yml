@@ -19,9 +19,15 @@ jobs:
           test -f index.html
           test -f style.css
           test -f script.js
+          test -f paginas/mente-de-titanio.html
+          test -f paginas/voce-contra-voce.html
+          test -f paginas/abduzido.html
 
       - name: Conferir referências principais
         run: |
           grep -q "style.css" index.html
           grep -q "script.js" index.html
           grep -q "Danilo A. de Lima" index.html
+          grep -q "paginas/mente-de-titanio.html" index.html
+          grep -q "paginas/voce-contra-voce.html" index.html
+          grep -q "paginas/abduzido.html" index.html
