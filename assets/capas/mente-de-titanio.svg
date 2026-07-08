@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1350" viewBox="0 0 900 1350" role="img" aria-label="Capa Mente de Titânio">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.55" stop-color="#111111"/>
+      <stop offset="1" stop-color="#3b2b08"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0" stop-color="#d4af37" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1350" fill="url(#bg)"/>
+  <rect width="900" height="1350" fill="url(#glow)"/>
+  <rect x="55" y="55" width="790" height="1240" fill="none" stroke="#d4af37" stroke-width="10"/>
+  <rect x="90" y="90" width="720" height="1170" fill="none" stroke="#d4af37" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="450" y="170" text-anchor="middle" fill="#d4af37" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="8">UNIVERSO TITÂNIO</text>
+  <text x="450" y="520" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="98" font-weight="900">MENTE</text>
+  <text x="450" y="635" text-anchor="middle" fill="#d4af37" font-family="Arial Black, Arial, sans-serif" font-size="88" font-weight="900">DE</text>
+  <text x="450" y="750" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="88" font-weight="900">TITÂNIO</text>
+  <line x1="180" y1="840" x2="720" y2="840" stroke="#d4af37" stroke-width="6"/>
+  <text x="450" y="925" text-anchor="middle" fill="#dddddd" font-family="Arial, Helvetica, sans-serif" font-size="34">Disciplina • Força Mental • Execução</text>
+  <text x="450" y="1185" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="4">DANILO A. DE LIMA</text>
+</svg>
