@@ -1,5 +1,13 @@
 # Respostas Prontas — WhatsApp | Elegance Cosméticos
 
+WhatsApp oficial da Elegance:
+
+`(31) 99517-0249`
+
+Link direto:
+
+`https://wa.me/5531995170249`
+
 ## Primeira resposta
 
 Oi. Tudo bem? Sou da Elegance Cosméticos. Posso te ajudar com perfumes, presentes, maquiagem e cuidados pessoais O Boticário.
@@ -46,5 +54,8 @@ Oi. Passando para confirmar se você ainda quer que eu te envie o link do produt
 
 Perfeito. Vou te mandar o link do catálogo. Assim você consegue conferir o produto, valor e disponibilidade atual.
 
-Link:
+Link do catálogo:
 https://minhaloja.boticario.com.br/loja-daniloalvestomedesouza-26296283/categoria?category=lancamento&page=2
+
+WhatsApp:
+https://wa.me/5531995170249
