@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1350" viewBox="0 0 900 1350" role="img" aria-label="Capa Ninguém Vai Fazer Por Você">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050505"/><stop offset="0.6" stop-color="#151515"/><stop offset="1" stop-color="#332606"/></linearGradient></defs>
+  <rect width="900" height="1350" fill="url(#bg)"/>
+  <rect x="55" y="55" width="790" height="1240" fill="none" stroke="#d4af37" stroke-width="10"/>
+  <circle cx="450" cy="310" r="125" fill="none" stroke="#d4af37" stroke-width="8" opacity="0.75"/>
+  <path d="M370 315 L430 375 L540 235" fill="none" stroke="#d4af37" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="450" y="530" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial" font-size="70" font-weight="900">NINGUÉM</text>
+  <text x="450" y="635" text-anchor="middle" fill="#d4af37" font-family="Arial Black, Arial" font-size="68" font-weight="900">VAI FAZER</text>
+  <text x="450" y="740" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial" font-size="72" font-weight="900">POR VOCÊ</text>
+  <text x="450" y="875" text-anchor="middle" fill="#dddddd" font-family="Arial" font-size="34">Assuma responsabilidade pela própria vida</text>
+  <text x="450" y="1175" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="42" font-weight="700" letter-spacing="4">DANILO A. DE LIMA</text>
+</svg>
