@@ -6,7 +6,11 @@ A loja ganhou um link limpo e uma versão preparada para divulgação:
 
 `/elegance/`
 
-## Entregas feitas nesta etapa
+Status estimado atualizado:
+
+`[█████████▓] 96%`
+
+## Entregas feitas
 
 ### 1. Link limpo criado
 
@@ -61,18 +65,48 @@ A loja recebeu uma seção simples explicando:
 3. finalizar no WhatsApp
 4. confirmar estoque e preço
 
-## O que ainda falta
+### 7. Páginas individuais dos 8 produtos prioritários
+
+Foram criadas páginas individuais para:
+
+- Malbec Desodorante Colônia 100ml
+- Comb Club 6 Prestige Pais/26
+- Imensi Desodorante Colônia 100ml
+- Comb Volpe Pais/26
+- Egeo Blue Desodorante Colônia 90ml
+- Egeo Feminino Desodorante Colônia
+- Coffee Woman Seduction 100ml
+- Magnific Rouge Camélia 75ml
+
+### 8. Links das páginas individuais dentro da loja
+
+A página `/elegance/` agora possui uma seção com links para as páginas individuais dos produtos prioritários e botão `Ver detalhes` nos cards principais.
+
+## O que ainda falta para 100%
 
 1. Substituir visuais provisórios por fotos reais autorizadas dos produtos.
-2. Criar páginas individuais para os 8 produtos prioritários.
-3. Colocar imagem de compartilhamento `og:image`.
+2. Colocar imagem de compartilhamento `og:image`.
+3. Criar favicon.
 4. Testar a loja no celular.
 5. Validar todos os preços no catálogo oficial antes de divulgar.
-6. Separar CSS e JavaScript em arquivos próprios se o projeto crescer.
-7. Criar posts e anúncios com o novo link da loja.
+6. Criar posts, stories e anúncios com o novo link da loja.
 
-## Status final estimado
+## Próxima ação recomendada
 
-`[█████████░] 92%`
+Criar pacote de divulgação da Elegance:
 
-A loja já está pronta para testes reais e pré-divulgação. Para finalizar 100%, faltam principalmente fotos reais autorizadas e testes no celular.
+- 10 posts para Instagram
+- 10 stories
+- 8 textos de anúncio com link da loja
+- 1 mensagem curta para grupos de Facebook
+- 1 mensagem para status do WhatsApp
+
+## Critério de pronto para divulgação pública
+
+A loja pode ser divulgada quando:
+
+- o link `/elegance/` abrir corretamente;
+- os botões de WhatsApp abrirem conversa com `(31) 99517-0249`;
+- o carrinho enviar a mensagem com produtos e total;
+- as páginas individuais abrirem no celular;
+- os preços forem conferidos no catálogo oficial.
